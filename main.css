@@ -1,0 +1,780 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+ 
+
+
+
+header{
+    /* margin-bottom: 1em; */
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    inset-block-start: 0;
+    backdrop-filter: blur(50px);
+    box-shadow:0px 0px 9px  rgb(119, 128, 136);
+    
+}
+
+.bar{
+    width: 40px;
+    height: 5px;
+    margin: 3px auto;
+    transition: .3s ease-in-out;
+    background-color:red;
+}
+
+.hamburger, .bar{
+    display: block;
+    position: relative;
+    right: 10px;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(50deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-50deg);
+}
+
+.nav-menu{
+    width: 60vw;
+    height: 35vh;
+    display: none;
+    text-align: center;
+    position: absolute;
+    z-index: -10;
+    inset-block-start: 0;
+    inset-inline-end: -100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: red;
+    /* opacity: .6; */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    margin: 0;
+}
+
+.nav-menu.active{
+    display: flex;
+    inset-block-start: 74px;
+    inset-inline-end: 0;
+    z-index: -100;
+}
+
+.nav-link, .nav-item{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .5s ease;
+}
+
+.nav-link:is(:hover, :active){
+    color: red;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+/* #############################################image sliders######################################### */
+
+.pager{
+    width: 100%;
+    overflow-x: hidden;
+    height: 530px;
+}
+
+
+
+.slider{
+width: 800%;
+height: 500px;
+/* border-radius: 10px;   */ 
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+}
+
+.slides{
+width: 800%;
+height: 500px;
+display: flex;
+/* background-color: red; */
+}
+
+.slides input{
+display: none;
+}
+
+.slide{
+width: 20%;
+transition: 2s;
+}
+
+.slide img{
+width: 70%;
+height: 500px;
+background-size:cover;
+}
+
+.navigation-manual{
+position: absolute;
+width: 100%;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+
+/* .mannual-btn{
+border: 2px solid #ccc ;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}   */
+
+.mannual-btn:not(:last-child){
+margin-right: 40px;
+}
+
+.mannual-btn:hover{
+background-color: #ccc;
+}
+
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+
+
+#radio2:checked ~ .first{
+margin-left: -20%;
+}
+
+
+ /* #radio3:checked ~ .first{
+margin-left: -40%;
+}
+
+
+#radio4:checked ~ .first{
+margin-left: -60%;
+}  */
+
+
+
+/* Automatic navigation */
+
+.navigation-auto{
+position: absolute;
+display: flex;
+width: 100%;
+justify-content: center;
+margin-top: 460px;
+}
+
+
+.navigation-auto div{
+border: 2px solid #333;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn-1{
+background-color: #ccc;
+}
+#radio2:checked ~.navigation-auto .auto-btn-2{
+background-color: #ccc;
+}
+ /* #radio3:checked ~.navigation-auto .auto-btn-3{
+background-color: #ccc;
+}
+#radio4:checked ~.navigation-auto .auto-btn-4{
+background-color: #ccc;
+} */
+
+
+
+
+/* ##################################################### Part one ##################################################### */
+
+
+.De{
+    text-align: center;
+    /* background-color: yellow; */
+    /* height: 100px; */
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+.prest{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.gious{
+    color: red;
+    font-size: 35px;
+}
+
+
+
+
+
+/* #################################################### Part two ######################################################## */
+
+
+.care{
+    margin: 1em;
+    border-radius: 5px;
+    background-color: rgb(224, 220, 220);
+    text-align: center;
+    height: 500px;
+    box-shadow: 2px 2px 2em rgb(202, 207, 212) ;
+}
+
+
+h3 {
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hour{
+    font-size: small;
+    opacity: .7;
+}
+
+.contact{
+    width: 70%;
+    height: 55px;
+    font-size: 27px;
+    margin: auto;
+    background-color: red;
+    border-radius: 5px;
+    padding-top: .6em;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+
+
+/* ##################################################### Part Three ######################################################## */
+
+
+.luxury{
+    text-align: center;
+    padding: 1em;
+}
+
+.cookie{
+    font-style: italic;
+}
+
+.taxis{
+    color: red;
+}
+
+
+
+/* ################################################# Part four ############################################################# */
+
+
+
+.enjoy{
+    background-color: rgb(224, 220, 220);
+    text-align: center;
+    padding-top: 1em;
+}
+
+.joy{
+    margin-left: .6em;
+    margin-right: .6em;
+}
+
+
+.drink{
+    height: 230px;
+    margin: 1em;
+    padding-top: 1em;
+    /* box-shadow: 2px 2px 2em rgb(254, 255, 255) ; */
+    border-radius: 7px;
+    line-height: 1cm;
+}
+
+
+.prof{
+    opacity: .8;
+}
+
+
+
+
+
+/* ################################################ Footer########################################################### */
+
+
+
+footer{
+    background-color:hsl(192, 100%, 9%);
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+.usa::before{
+    content:"\1F3E0";
+    font-size: 20px;
+    
+}
+
+
+.mail::before{
+    content:"\2709";
+    font-size: 20px;   
+}
+
+.phone::before{
+    content: "\260E";
+    font-size: 20px;
+}
+
+.seven, .eigth{
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* #############################################################Contact############################################## */
+
+
+
+/* ###################################################### Part Five ################################################# */
+
+
+
+
+
+
+
+
+                                                .pree{
+                                                    background-image: url(hero_image_6.jpg);
+                                                    width: 100%;
+                                                    height: 250px;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    color: whitesmoke;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                }
+
+                                                .tent{
+                                                    text-align: center;
+                                                }
+
+
+                                                .yahoomail{
+                                                    width: 100%;
+                                                    height: 800px;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                }
+
+                                                h1{
+                                                    opacity: .8;
+                                                }
+
+                                                .fallguy{
+                                                    text-align: center;
+                                                    width: 90%;
+                                                }
+
+
+                                                form{
+                                                    /* background-color: rgb(189, 197, 204); */
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 1em;
+                                                }
+
+                                                input{
+                                                    height: 70px;
+                                                }
+
+                                                textarea{
+                                                    height: 150px;
+                                                }
+
+                                                button{
+                                                    width:50% ;
+                                                    height: 50px;
+                                                    background-color: red;
+                                                    color:  whitesmoke;
+                                                    border-radius: 5px;
+                                                    border-color: white;
+                                                }
+
+
+
+
+
+
+
+
+/* ####################################################### About Us########################################################### */
+
+
+
+
+
+
+
+
+
+
+
+
+/*################################################### Part seven ############################################  */
+
+
+.space{
+    background-image: url(istockphoto-1425221653-170667a.webp);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause{
+    text-align: center;
+}
+
+
+
+
+/* ############################################### Part eight ###################################################### */
+
+
+
+.chanlenge{
+    margin: 1em;
+     border-radius: 5px;
+     background-color: rgb(255, 255, 255);
+     text-align: left;
+     height: 620px;
+     box-shadow: 1px 2px 2em rgb(202, 207, 212) ;
+}
+
+
+.eleven{
+    padding: 1em;
+    font-size: 19px;
+    
+}
+
+.kenge{
+    font-size: 25px;
+    color: #413f3f;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ########################################################## Bridal######################################################## */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################################ Media Query################################################## */
+
+
+
+
+
+
+@media (min-width:768px) {
+
+    .hamburger{
+        display: none;
+    }
+
+    header{
+        align-items: start;
+        padding-bottom: .2em;
+    }
+
+    .nav-menu{
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin-top: .7em;
+        background-color: transparent;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+
+
+
+
+    /* ############################################################ Part Two #################################################### */
+
+    
+    .service{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .care{
+        width: 33.3%;
+        height: 530px;
+    }
+
+
+    /* ######################################################### Part four ####################################################### */
+
+    .energy{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .drink{
+        width: 33.3%;
+        line-height: .8cm;
+    }
+
+
+
+    /* ################################################# Footer ################################################################ */
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+.teen{
+    width: 33.3%;
+    font-size: 18px;
+    /* background-color: red; */
+}
+
+.seven, .eigth{
+    padding-top: 1em;
+}
+
+
+
+
+
+
+
+
+/* ########################################################### Contact Us ################################################## */
+
+
+
+
+                                                     .pree{
+                                                        height: 500px;
+                                                        font-size: 30px;
+                                                    } 
+
+
+                                                    .fallguy{
+                                                        width: 65%;
+                                                    }
+
+
+
+
+
+
+
+
+                                
+                                
+
+/* ################################################## part eigth ################################################### */
+
+
+
+  .chanlenge {
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    margin-bottom: 3em;
+  }  
+  
+  
+  .space{
+    height: 500px;
+    font-size: 30px;
+  }
+
+
+  .big{
+    width: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ###########################################################Bridal########################################################### */
+
+
+
+  .brimage img{
+    height: 450px;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1440px) {
+
+     .care{
+        height: 550px;
+     }
+
+
+}

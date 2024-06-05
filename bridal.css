@@ -1,0 +1,507 @@
+.boom{
+    width: 100%;
+    overflow-x: hidden;
+    height: 1000px;
+} 
+
+.igbo{
+    padding: 1em;
+}
+
+.sliderr{
+    width: 100%;
+    height: 430px;
+    font-style: oblique;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    /* background-color: rgb(24, 19, 19); */
+    margin-bottom: 1em;
+}
+
+.slidess{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slidee input{
+    display: none;
+}
+
+.slidee{
+    width: 20%;
+    transition: 2s;
+}
+
+.slidee img{
+    width: 100%;
+    height: 400px;
+}
+
+#radioo1, #radioo2, #radioo3, #radioo4{
+    display: none;
+}
+
+.navigationn-mannual{
+    position: absolute;
+    /* width: 800px; */
+     width: 300px; 
+    margin-top: -40px;
+    /* margin-left: 250px; */
+    display: flex;
+    justify-content: center;
+}
+
+.mannuall-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.mannuall-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.mannuall-btn:hover{
+    background-color: aliceblue;
+}
+
+#radioo1:checked ~ .first{
+    margin-left: 0;
+}
+#radioo2:checked ~ .first{
+    margin-left: -20%;
+}
+#radioo3:checked ~ .first{
+    margin-left: -40%;
+}
+#radioo4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+
+
+
+/* ###################################################################################################################### */
+
+
+
+
+
+
+
+
+.sliderrr{
+    width: 100%;
+    height: 430px;
+    font-style: oblique;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    /* background-color: red; */
+    margin-bottom: 1em;
+}
+
+.slidesss{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slideee input{
+    display: none;
+}
+
+.slideee{
+    width: 20%;
+    transition: 2s;
+}
+
+.slideee img{
+    width: 100%;
+    height: 400px;
+}
+
+#radiooo1, #radiooo2, #radiooo3, #radiooo4{
+    display: none;
+} 
+
+.navigationnn-mannual{
+    position: absolute;
+    /* width: 800px; */
+     width: 300px; 
+    margin-top: -40px;
+    /* margin-left: 250px; */
+    display: flex;
+    justify-content: center;
+}
+
+.mannualll-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.mannualll-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.mannualll-btn:hover{
+    background-color: aliceblue;
+}
+
+#radiooo1:checked ~ .first{
+    margin-left: 0;
+}
+#radiooo2:checked ~ .first{
+    margin-left: -20%;
+}
+#radiooo3:checked ~ .first{
+    margin-left: -40%;
+}
+#radiooo4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ########################################################################################################################3###*/
+/*  ##########################################################################################################################*/
+/* ######################################################################################################################## */
+
+
+
+
+.boomm{
+    width: 100%;
+    overflow-x: hidden;
+    height: 1000px;
+    /* padding: .8em; */
+} 
+
+
+
+.sliderrrr{
+    width: 100%;
+    height: 430px;
+    font-style: oblique;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    /* background-color: red; */
+    margin-bottom: 1em;
+}
+
+.slidessss{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slideeee input{
+    display: none;
+}
+
+.slideeee{
+    width: 20%;
+    transition: 2s;
+}
+
+.slideeee img{
+    width: 100%;
+    height: 400px;
+}
+
+#radioooo1, #radioooo2, #radioooo3, #radioooo4{
+    display: none;
+}
+
+.navigationnnn-mannual{
+    position: absolute;
+    /* width: 800px; */
+     width: 300px; 
+    margin-top: -40px;
+    /* margin-left: 250px; */
+    display: flex;
+    justify-content: center;
+}
+
+.mannuallll-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.mannuallll-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.mannuallll-btn:hover{
+    background-color: aliceblue;
+}
+
+#radioooo1:checked ~ .first{
+    margin-left: 0;
+}
+#radioooo2:checked ~ .first{
+    margin-left: -20%;
+}
+#radioooo3:checked ~ .first{
+    margin-left: -40%;
+}
+#radioooo4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+
+
+
+/* ###################################################################################################################### */
+
+
+
+
+
+
+
+
+.sliderrrrr{
+    width: 100%;
+    height: 430px;
+    font-style: oblique;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    /* background-color: red; */
+    margin-bottom: 1em;
+}
+
+.slidesssss{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slideeeee input{
+    display: none;
+}
+
+.slideeeee{
+    width: 20%;
+    transition: 2s;
+}
+
+.slideeeee img{
+    width: 100%;
+    height: 400px;
+}
+
+#radiooooo1, #radiooooo2, #radiooooo3, #radiooooo4{
+    display: none;
+} 
+
+.navigationnnnn-mannual{
+    position: absolute;
+    /* width: 800px; */
+     width: 300px; 
+    margin-top: -40px;
+    /* margin-left: 250px; */
+    display: flex;
+    justify-content: center;
+}
+
+.mannualllll-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.mannualllll-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.mannualllll-btn:hover{
+    background-color: aliceblue;
+}
+
+#radiooooo1:checked ~ .first{
+    margin-left: 0;
+}
+#radiooooo2:checked ~ .first{
+    margin-left: -20%;
+}
+#radiooooo3:checked ~ .first{
+    margin-left: -40%;
+}
+#radiooooo4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) {
+
+    .navigationnn-mannual {
+        width: 350px;
+    }
+    
+    .navigationn-mannual {
+        width: 350px;
+    }
+    .navigationnnn-mannual {
+        width: 350px;
+    }
+    
+    .navigationnnnn-mannual {
+        width: 350px;
+    }
+    
+}
+
+
+@media (min-width:425px) {
+
+    .navigationnn-mannual {
+        width: 390px;
+    }
+    
+    .navigationn-mannual {
+        width: 390px;
+    }
+
+    .navigationnnn-mannual {
+        width: 390px;
+    }
+    
+    .navigationnnnn-mannual {
+        width: 390px;
+    }
+    
+}
+
+
+
+@media (min-width:768px) {
+
+    .boom{
+
+        display: flex;
+        height: 450px;
+        justify-content:space-between ;
+       
+
+    }
+    .boomm{
+
+        display: flex;
+        height: 450px;
+        justify-content:space-between ;
+
+    }
+
+    .led{
+        width: 47%;
+    }
+
+    .navigationnnnn-mannual{
+        width: 350px;
+    }
+    .navigationnn-mannual{
+        width: 350px;
+    }
+    
+
+    
+}
+
+
+
+
+@media (min-width:1024px) {
+
+    .navigationnn-mannual {
+        width: 480px;
+    }
+    
+    .navigationn-mannual {
+        width: 480px;
+    }
+    
+    .navigationnnn-mannual {
+        width: 480px;
+    }
+    
+    .navigationnnnn-mannual {
+        width: 480px;
+    }
+    
+}
+
+
+@media (min-width:1440px) {
+
+    .navigationnn-mannual {
+        width: 650px;
+    }
+    
+    .navigationn-mannual {
+        width: 650px;
+    }
+    .navigationnnn-mannual {
+        width: 650px;
+    }
+    
+    .navigationnnnn-mannual {
+        width: 650px;
+    }
+    
+}
